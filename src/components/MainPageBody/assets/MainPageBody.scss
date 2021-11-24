@@ -1,0 +1,67 @@
+@import '../../../variables/Variables.scss';
+.hero{
+    position: relative;
+    h1{
+        font-size: 175px;
+        font-family: $latoFont;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 128px;
+        margin-bottom: 89px;
+    }
+    img{
+        position: absolute;
+        right: 0;
+    }
+}
+.go-to-docs{
+    display: flex;
+    justify-content: center;
+    button{
+        padding: 13px 34px;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 3px $yellowColor solid;
+        font-size: 20px;
+        font-family: $latoFont;
+        font-weight: 300;
+    }
+
+}
+.add-theme{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    button{
+        margin-bottom: 78px;
+        background: transparent;
+        border: none;
+        font-family: $montserratFont;
+        font-weight: 400;
+        font-size: 14px;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+.cards-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 38px;
+    .card{
+        background: black;
+        height: 225px;
+        border-radius: 27px;
+        color: $yellowColor;
+        font-size: 46px;
+        font-family: $latoFont;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+        &:hover{
+            color: black;
+            background: $yellowColor;
+        }
+    }
+}
