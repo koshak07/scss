@@ -1,5 +1,6 @@
 @import url(d:\newapp\src\components\Navbar\accets\Navbar.css);
 @import url(d:\newapp\src\components\MainPageBody\assets\MainPageBody.css);
+@import url(d:\newapp\src\components\Footer\assets\Footer.css);
 * {
   padding: 0;
   margin: 0;
@@ -12,5 +13,14 @@
 
 .h-100 {
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
+  list-style-type: none;
 }
 /*# sourceMappingURL=Styles.css.map */

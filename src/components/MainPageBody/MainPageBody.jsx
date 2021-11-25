@@ -1,5 +1,8 @@
 import React from "react";
 import arrowIcon from '../../images/Arrow.svg'
+import prevIcon from '../../images/prevIcon.svg'
+import nextIcon from '../../images/nextIcon.svg'
+import penIcon from '../../images/penIcon.svg'
 
 const MainPageBody = () => {
   return (
@@ -27,6 +30,21 @@ const MainPageBody = () => {
                 <div className="card">React Hooks</div>
                 <div className="card">JQuery</div>
             </div>
+            <div className="pagination-block">
+              <div>
+                <img src={prevIcon} alt="" />
+              </div>
+              <div>0</div>
+              <div>
+                <img src={nextIcon} alt="" />
+              </div>
+            </div>
+            <div className="edit-block">
+              <a href="#">
+                <img src={penIcon} alt="" /> Редактировать
+              </a>
+            </div>
+
         </div>
       </div>
     </div>

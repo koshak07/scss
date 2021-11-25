@@ -8,6 +8,15 @@
         text-align: center;
         margin-top: 128px;
         margin-bottom: 89px;
+        @media all and (max-width: 992px){
+            font-size: 135px;
+        }
+        @media all and (max-width: 680px){
+            font-size: 65px;
+        }
+        @media all and (max-width: 375px){
+            font-size: 35px;
+        }
     }
     img{
         position: absolute;
@@ -59,9 +68,44 @@
         align-items: center;
         justify-content: center;
         transition: all 0.5s;
+        text-align: center;
         &:hover{
             color: black;
             background: $yellowColor;
+        }
+    }
+    @media all and (max-width: 992px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media all and (max-width: 768px){
+        grid-template-columns: 1fr;
+
+    }
+}
+.pagination-block{
+    display: grid;
+    grid-template-columns: 100px 150px 100px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: $latoFont;
+    font-weight: 300;
+    div:nth-child(2){
+        margin-bottom: 5px;
+    }
+}
+.edit-block{
+    margin-top: 15px;
+    margin-bottom: 64px;
+    margin-left: 60px;
+    font-family: $montserratFont;
+    font-size: 19px;
+    a{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 5px;
         }
     }
 }

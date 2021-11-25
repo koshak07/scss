@@ -12,6 +12,24 @@
   margin-bottom: 89px;
 }
 
+@media all and (max-width: 992px) {
+  .hero h1 {
+    font-size: 135px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .hero h1 {
+    font-size: 65px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+}
+
 .hero img {
   position: absolute;
   right: 0;
@@ -85,10 +103,65 @@
           justify-content: center;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  text-align: center;
 }
 
 .cards-list .card:hover {
   color: black;
   background: #ffe600;
+}
+
+@media all and (max-width: 992px) {
+  .cards-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cards-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.pagination-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 150px 100px;
+      grid-template-columns: 100px 150px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.pagination-block div:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+.edit-block {
+  margin-top: 15px;
+  margin-bottom: 64px;
+  margin-left: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+}
+
+.edit-block a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-block a img {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=MainPageBody.css.map */
